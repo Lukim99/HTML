@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style</title>
+    <style>
+        ul.list {
+            padding: 0;
+            line-height: 2em;
+        }
+        ul.list>li {
+            list-style: none;
+        }
+        ul.list>li b {
+            background-color: black;
+            color: white;
+            font-weight: normal;
+        }
+        ul.list>li>ul {
+            list-style: decimal;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li><b>모바일</b>
+            <ol>
+                <li>제2의 나라</li>
+                <li>ROBLOX Roblox</li>
+                <li>트릭스터M</li>
+                <li>쿠키런: 킹덤</li>
+                <li>바람의나라 연</li>
+            </ol>
+        </li>
+        <li><b>온라인</b>
+            <ul>
+                <li>리그 오브 레전드</li>
+                <li>피파온라인4</li>
+                <li>로스트아크</li>
+                <li>메이플스토리</li>
+                <li>아이온</li>
+            </ul>
+        </li>
+        <li><b>스팀</b>
+            <ul>
+                <li>플레이어언노운스 배틀그라운드</li>
+                <li>어몽 어스</li>
+                <li>GTA 5</li>
+                <li>잇 테이크 투</li>
+                <li>스타듀밸리</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
