@@ -31,6 +31,15 @@
     .contact a {
       color: #F9A2DE;
     }
+    .hidden {
+      background-color: black;
+      color: black;
+      -ms-user-select: none; 
+      -moz-user-select: -moz-none; 
+      -webkit-user-select: none; 
+      -khtml-user-select: none; 
+      user-select: none;
+    }
   </style>
   </head>
 <body>
@@ -71,7 +80,7 @@
       <ul>
         <li class="contact">Email: <a href="mailto:lukim9@kakao.com">lukim9@kakao.com</a></li>
         <li class="contact">Web: <a href="https://ykm-dev.site">https://ykm-dev.site</a></li>
-        <li class="contact">Tel: (010)-8682-6047</li>
+        <li class="contact">Tel: <p class="hidden">(010)-****-6047</p></li>
       </ul>
     </article>
   </section>
