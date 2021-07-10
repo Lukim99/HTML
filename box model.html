@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .content {
+            margin: 40px;
+            padding: 25px;
+            border: blue solid 20px;
+        }
+        .box {
+            margin: 10px;
+            padding: 50px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background-color: dodgerblue;
+            color: white;
+            display: inline-block;
+            border: 7px outset orange;
+        }
+        .r1 {
+            border-radius: 7px;
+        }
+        .r2 {
+            border-radius: 21px;
+        }
+        .r3 {
+            border-radius: 50%;
+        }
+        .r4 {
+            border-top-left-radius: 21px;
+            border-bottom-right-radius: 21px;
+        }
+        .r5 {
+            border-top-left-radius: 100%;
+        }
+        .r6 {
+            border-radius: 50%;
+            border-bottom-left-radius: 0;
+        }
+        .r7 {
+            border-radius: 100% 0;
+        }
+        .r8 {
+            border-radius: 100% 100% 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">모두를 위한 코딩 (Coding for all)</div>
+    <br>
+    <p class="box r1"></p>
+    <p class="box r2"></p>
+    <p class="box r3"></p>
+    <p class="box r4"></p>
+    <br>
+    <p class="box r5"></p>
+    <p class="box r6"></p>
+    <p class="box r7"></p>
+    <p class="box r8"></p>
+</body>
+</html>
