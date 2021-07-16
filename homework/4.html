@@ -6,7 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>모두를 위한 코딩</title>
   <link rel="stylesheet" href="../assets/main.css">
-  
+  <style>
+    .one:not(.parent) {
+      width: 300px;
+      height: 150px;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      box-sizing: border-box;
+      float: left;
+    }
+    .box1.one {
+      background-color: yellow;
+    }
+    .box2.one {
+      background-color: blue;
+    }
+    .box3.one {
+      background-color: green;
+    }
+    .box4.one {
+      clear: both;
+      background-color: purple;
+    }
+    .two:not(.parent) {
+      width: 150px;
+      height: 150px;
+      margin: 20px;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      box-sizing: border-box;
+      border: 2px solid #222;
+      float: left;
+    }
+    .box4.two {
+      float: right;
+    }
+    .three:not(.parent) {
+      width: 66%;
+      height: 150px;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+    .box1.three {
+      float: left;
+      background-color: darkorange;
+    }
+    .box2.three {
+      float: right;
+      background-color: blue;
+    }
+    .four:not(.parent) {
+      text-align: center;
+      color: white;
+      box-sizing: border-box;
+    }
+    .parent.four {
+      position: relative;
+    }
+    .box1.four {
+      width: 200px;
+      height: 220px;
+      background-color: dodgerblue;
+    }
+    .box2.four {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      background-color: lightcoral;
+    }
+  </style>
   </head>
 <body>
   <header>
@@ -26,7 +98,34 @@
       </ol>      
     </nav>
     <article>      
-      
+      <br>
+      <p>(1)</p>   
+      <div class="one parent">
+        <div class="one box1">box1</div>
+        <div class="one box2">box2</div>
+        <div class="one box3">box3</div>
+      </div>
+      <div class="one box4" style="width: 900px;">box4</div>
+      <br>
+      <p style="clear: both;">(2)</p>
+      <div class="two parent">
+        <div class="two box1">box1</div>
+        <div class="two box2">box2</div>
+        <div class="two box3">box3</div>
+        <div class="two box4" style="background-color: darkorange;">box4</div>
+      </div>
+      <br>
+      <p style="clear: both;">(3)</p>
+      <div class="three parent">
+        <div class="three box1">box1</div>
+        <div class="three box2">box2</div>
+      </div>
+      <br>
+      <p style="clear: both;">(4)</p>
+      <div class="four parent">
+        <div class="four box1">box1</div>
+        <div class="four box2">box2</div>
+      </div>
     </article>
   </section>
   <footer>
