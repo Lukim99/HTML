@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>제이쿼리 선택자</title>
+    <style>
+        .box {
+            height: 300px;
+            background-color: blue;
+        }
+        .desc {
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p class="desc">마우스가 벗어났습니다.</p>
+    <script>
+        $(function() {
+            $('.box').click(function() {
+                $('.desc').text('box를 클릭했습니다.');
+            });
+            $('.box').mouseenter(function() {
+                $('.desc').text('마우스를 올렸습니다.');
+            });
+            $('.box').mouseleave(function() {
+                $('.desc').text('마우스가 벗어났습니다.');
+            });
+            $(window).scroll(function() {
+                $('.desc').text('마우스를 스크롤했습니다.');
+            });
+            $(window).resize(function() {
+                $('.desc').text('사이트를 리사이즈했습니다.');
+            });
+        });
+    </script>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, tempore quidem. Deleniti repellendus non odit velit beatae natus temporibus accusantium soluta ipsum dignissimos? Odit ipsam illum architecto ipsum ducimus cupiditate aliquid perspiciatis saepe aliquam quod corrupti, nam magnam repudiandae dolore, ullam voluptatem? Unde accusantium ad dignissimos aspernatur neque mollitia similique dolorem natus sit recusandae quisquam nesciunt dolore quo ex consequuntur pariatur, repellat assumenda quibusdam incidunt! Totam ratione sapiente distinctio sint quis ad perspiciatis labore est itaque quasi. Et aperiam dolorum quasi nisi repudiandae magni ea, ad deserunt vero alias illum officia. Beatae saepe distinctio enim fugit debitis totam deleniti odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, facere quasi. Cum repellat obcaecati eius qui, inventore quis repellendus unde facere voluptatum a enim quia placeat, earum atque quidem dolorem non veniam, quaerat quo commodi rem ad? Quasi, similique nostrum? Culpa, fugit quam ex similique non at corporis nemo nihil voluptatum porro impedit aliquam deleniti nisi hic? Repudiandae, cum libero eum ut sunt, quam voluptatum quae rem, possimus aliquid molestiae. Quos, natus ipsa, rerum architecto impedit dolor obcaecati corporis animi culpa ducimus alias consectetur cumque beatae reprehenderit debitis perferendis dolore at sunt, atque ab hic aut? Quae fuga consectetur placeat animi cumque architecto, quis odio necessitatibus? Nemo eos excepturi, consequuntur voluptatum dolore dolor maiores, molestias, odio doloribus numquam pariatur! Vero quidem et perspiciatis sunt provident ducimus. Repellendus nemo optio sequi inventore facere dolorum beatae praesentium neque exercitationem corporis molestiae repellat accusamus officia eius error ab et id sit, est amet nobis debitis aspernatur aut saepe. Commodi sequi assumenda iusto fuga, dignissimos porro neque accusantium quos dolor est aliquid eaque quas aspernatur quod eius earum dolorem quisquam asperiores et. Laborum, voluptatum debitis, accusantium atque quia voluptatibus odit hic impedit magnam quo aliquid nostrum quibusdam, qui modi quaerat quidem dolor esse nobis.
+</body>
+</html>
