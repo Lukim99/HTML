@@ -4,9 +4,112 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>모두를 위한 코딩</title>
+  <title>과제6</title>
   <link rel="stylesheet" href="../assets/main.css">
-  
+  <link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+  <style>   
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');                     
+        @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+
+        #container2 section {                        
+            font-family: 'Noto Sans KR', sans-serif;
+            color: rgb(68, 68, 177);
+            background-color: rgb(159, 218, 241);
+            padding: 15px;
+            padding-top: 2px;
+            display: flex;
+        }
+        #container2 li {
+            list-style-type: square;
+            font-size: 12px;
+            padding: 0;
+            margin-left: -15px;
+        }
+        .btn b{
+            font-family: 'Fascinate Inline', cursive; 
+        }
+        .btn {
+            width: 160px;
+            text-align: center;
+            background-color: white;
+            padding: 2px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .btn a{
+            color: rgb(47, 47, 151);
+            text-decoration: none;
+        }
+        .btn b{
+            font-family: 'Fascinate Inline', cursive;
+            vertical-align: middle;
+        }
+        .btn span {
+            font-size: 10px;
+            color: white;
+            background-color: red;
+            border-radius: 2px;
+        }
+
+
+        @media (min-width: 1001px) {
+            article:nth-child(1) {
+                display: block;
+            }
+            article:nth-child(2) {
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+            .item div:not(.btn) {
+                background-color: white;
+                border-radius: 3px;
+                text-align: center;
+                margin-top: 10px;
+                margin-left: 20px;
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 1000px) and (min-width: 501px) {
+            article:nth-child(1) {
+                display: block;
+            }
+            article:nth-child(2) {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .item div:not(.btn) {
+                background-color: white;
+                border-radius: 3px;
+                text-align: center;
+                margin-top: 10px;
+                margin-left: 20px;
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 500px) {
+            #container2 section {
+                display: block;
+            }
+            .item div:not(.btn) {
+                padding: 0;
+                background-color: white;
+                border-radius: 8px;
+                text-align: center;
+                margin-bottom: 9px;
+                font-size: 12px;
+            }
+            .btn {
+                display: inline-block;
+            }
+        }
+    </style>
   </head>
 <body>
   <header>
@@ -26,7 +129,26 @@
       </ol>      
     </nav>
     <article>      
-      
+      <div id="container2">
+        <section>
+            <article class="item">
+                <h1>과제6</h1>
+                <ul>
+                    <li>HTML</ol>
+                    <li>CSS</ol>
+                    <li>JavaScript</ol>
+                    <li>Python</ol>
+                </ul>
+                <div class="btn"><a href="#"><b>Coding for All</b> &nbsp;<span>모집중</span></a></div>
+            </article>                    
+            <article class="item">            
+                <div><b>HTML <i class="item fab fa-html5"></i></b></div>
+                <div><b>CSS <i class="item fab fa-css3-alt"></i></b></div>
+                <div><b>JavaScript <i class="item fab fa-js-square"></i></b></div>
+                <div><b>Python <i class="fab fa-python"></i></i></b></div>                
+            </article>
+        </section>
+    </div>
     </article>
   </section>
   <footer>
